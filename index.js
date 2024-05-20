@@ -35,7 +35,8 @@ app.use((req, res) => {
     res.render('404', { title: '404' });
 });
 
+const port = process.env.PORT || 3000;
 // Start the server
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is running on port 3000');
 });
